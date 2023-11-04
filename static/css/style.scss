@@ -1,0 +1,63 @@
+@import "./welcome";
+@import "./features";
+@import "./colors";
+@import "./about";
+@import "./services";
+@import "./testimonials";
+@import "./copyright";
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Domine", serif;
+  font-family: "EB Garamond", serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  max-width: 1300px;
+  margin: 30px auto;
+  img{
+    padding-left: 10px;
+    position: relative;
+    left: 15px;
+  }
+  ul {
+    li > a {
+      color: #081158aa;
+      font-size: 14px;
+      transition: 0.2s all;
+      &:hover {
+        color: black;
+        transition: 0.2s all;
+      }
+    }
+    > .btn {
+      color: #fbb244;
+      border-radius: 20px;
+      background: #081158;
+      border: 2px solid #081158;
+      //   padding: 30px;
+      transition: 0.2s all;
+
+      &:hover {
+        background: transparent;
+        color: black;
+        border: 2px solid gray;
+        transition: 0.4s all;
+      }
+    }
+  }
+}
+
+
+@media (max-width:820px) {
+  .navbar{
+    // align-items: center;
+    ul{
+      display: none;
+    }
+  }
+}

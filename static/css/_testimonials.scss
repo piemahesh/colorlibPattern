@@ -1,0 +1,25 @@
+.testimonials {
+  margin-top: 50px;
+  //   max-width: 100%;
+  > h1 {
+    color: $h1Col;
+  }
+  > :nth-child(1) {
+    color: $gold;
+    width: fit-content;
+    padding: 5px 20px;
+    color: #fbb244;
+    text-transform: uppercase;
+    background-color: rgba(251, 178, 68, 0.2);
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 700;
+  }
+  > p {
+    text-align: center;
+    color: $pCol;
+    font-size: 0.9em;
+    max-width: 1000px;
+  }
+  
+}

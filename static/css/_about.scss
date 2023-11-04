@@ -1,0 +1,64 @@
+.about {
+  margin: auto;
+  max-width: 1400px;
+  justify-content: space-between;
+  margin: 30px auto;
+  gap: 20px;
+  padding: 20px;
+  .imgContainer {
+    max-width: 700px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  .aboutContainer {
+    max-width: 500px;
+    gap: 15px;
+    > :nth-child(1) {
+      color: $gold;
+      width: fit-content;
+      padding: 5px 20px;
+      color: #fbb244;
+      text-transform: uppercase;
+      background-color: rgba(251, 178, 68, 0.2);
+      border-radius: 30px;
+      font-size: 10px;
+      font-weight: 700;
+    }
+    h1 {
+      color: $h1Col;
+      font-family: inherit;
+      font-size: 3em;
+    }
+    > p,
+    li {
+      color: $pCol;
+      font-size: 0.9em;
+    }
+    .btn {
+      color: white;
+      border-radius: 20px;
+      background: #081158;
+      border: 2px solid #081158;
+      padding: 5px 15px 5px 15px;
+      transition: 0.2s all;
+      width: fit-content;
+
+      &:hover {
+        background: transparent;
+        color: black;
+        border: 2px solid gray;
+        transition: 0.4s all;
+      }
+    }
+  }
+}
+
+
+@media (max-width:1000px){
+  .about{
+    flex-direction: column;
+  }
+}

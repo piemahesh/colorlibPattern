@@ -1,0 +1,42 @@
+@import "colors";
+.features {
+  width: 100%;
+  > :nth-child(3) {
+    max-width: 600px;
+    text-align: center;
+    color: $pCol;
+  }
+  > h1 {
+    color: #081158;
+  }
+
+  .marketing {
+    max-width: 1200px;
+    padding: 30px;
+    justify-content: center;
+    .inside-content {
+      max-width: 400px;
+      align-items: center;
+      justify-content: center;
+      //   margin: 0px 50px;
+      padding: 20px;
+      gap: 10px;
+      > h5 {
+        font-weight: 600;
+        font-size: 1.2em;
+        text-align: center;
+        color: rgba(44, 43, 43, 0.753);
+      }
+      > p {
+        text-align: center;
+        color: $pCol;
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .marketing {
+    flex-direction: column;
+  }
+}

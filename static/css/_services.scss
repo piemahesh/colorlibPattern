@@ -1,0 +1,91 @@
+.services {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  //   background-color: rgba(250, 128, 114, 0.158);
+  > h1 {
+    color: $h1Col;
+  }
+  > :nth-child(1) {
+    color: $gold;
+    width: fit-content;
+    padding: 5px 20px;
+    color: #fbb244;
+    text-transform: uppercase;
+    background-color: rgba(251, 178, 68, 0.2);
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .ourContainer {
+    // padding-bottom: 20px;
+    display: grid;
+    grid-template: auto / auto auto;
+    // flex-wrap: wrap;
+    // align-items: center;
+    // justify-content: center;
+    // margin: 20px auto;
+    // justify-content: space-between;
+    // max-width: 1400px;
+    .servicesContainer {
+      flex-basis: calc(50.33% - 10px);
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      max-width: 500px;
+      display: flex;
+      padding: 40px;
+      margin: 10px;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #4f4a4a15;
+      .dot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: #fab14570;
+        margin: 0px 20px;
+      }
+      .textContainer {
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        h3 {
+          color: black;
+          font-size: 1em;
+          font-weight: 700;
+        }
+        p {
+          color: $pCol;
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+}
+
+
+
+// ..........media...............
+
+@media (max-width:800px){
+  .ourContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // flex-grow: 100%;
+    .servicesContainer{
+      // max-width: 600px;
+      flex-basis: calc(50.33% - 100px);
+      flex-wrap: nowrap;
+      // background-color: saddlebrown;
+    }
+  }
+}
