@@ -16,6 +16,10 @@
   font-family: "Open Sans", sans-serif;
   font-family: "Poppins", sans-serif;
 }
+html,body{
+  overflow-x:hidden;
+  max-width:100%;
+}
 .navbar {
   max-width: 1300px;
   margin: 30px auto;
